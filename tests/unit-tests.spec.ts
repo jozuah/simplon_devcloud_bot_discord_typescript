@@ -24,13 +24,9 @@ describe('MessageResponder', () => {
 
   it('should reply', async () => {
     whenIsPingThenReturn(true);
-<<<<<<< HEAD
 
     await service.handle(mockedMessageInstance);
 
-=======
-    await service.handle(mockedMessageInstance);
->>>>>>> 670541e1e9095dcfc8c41d2b40233ac1830c88fe
     verify(mockedMessageClass.reply('hello user')).once();
   })
 
@@ -41,7 +37,6 @@ describe('MessageResponder', () => {
     //   verify(mockedMessageClass.reply('hello ' + message.author.username)).once()
   })
 
-<<<<<<< HEAD
 //   it('should not reply', async () => {
 //     whenIsPingThenReturn(false);
 
@@ -55,8 +50,6 @@ describe('MessageResponder', () => {
     // verify(mockedMessageClass.reply('pong!')).never();
 //   })
 
-=======
->>>>>>> 670541e1e9095dcfc8c41d2b40233ac1830c88fe
   function setMessageContents() {
     mockedMessageInstance.content = "Non-empty string";
   }
