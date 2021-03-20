@@ -1,0 +1,7 @@
+[azure-vm]
+52.232.194.53
+
+[azure-vm:vars]
+github_user=thibault-Merelle
+AZ_user=Marvin
+app_name=Bot-Discord
