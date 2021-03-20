@@ -2,11 +2,7 @@
   "compilerOptions": {
     "module": "commonjs",
     "moduleResolution": "node",
-<<<<<<< HEAD
     "target": "es2016",
-=======
-    "target": "es2019",
->>>>>>> 670541e1e9095dcfc8c41d2b40233ac1830c88fe
     "lib": [
       "es6",
       "dom"
