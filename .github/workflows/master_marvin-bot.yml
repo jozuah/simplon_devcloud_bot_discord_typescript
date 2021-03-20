@@ -21,11 +21,17 @@ jobs:
       with:
         node-version: '12.x'
 
+    - name: Make envfile
+      uses: SpicyPizza/create-envfile@v1
+      with:
+        envkey_SECRET_KEY: ${{ secrets.TOKEN }}
+        file_name: .env
+
     - name: npm install, build, and test
       run: |
         npm install
-        npm run build --if-present
-        npm run test --if-present
+        npm run watch --if-present
+        npm run start --if-present
 
     - name: 'Deploy to Azure Web App'
       uses: azure/webapps-deploy@v2
