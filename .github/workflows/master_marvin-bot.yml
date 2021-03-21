@@ -31,7 +31,7 @@ jobs:
       run: |
         npm install
         npm run watch --if-present
-        npm run start --if-present
+        npm run test --if-present
 
     - name: 'Deploy to Azure Web App'
       uses: azure/webapps-deploy@v2
